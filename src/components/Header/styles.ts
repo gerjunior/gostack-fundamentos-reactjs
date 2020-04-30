@@ -9,7 +9,8 @@ export const Container = styled.div<ContainerProps>`
   padding: 30px 0;
 
   header {
-    width: 1120px;
+    max-width: 1120px;
+    min-width: 840px;
     margin: 0 auto;
     padding: ${({ size }) => (size === 'small' ? '0 20px ' : '0 20px 150px')};
     display: flex;

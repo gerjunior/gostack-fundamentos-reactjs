@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { lighten } from 'polished';
 
 interface CardProps {
   total?: boolean;
@@ -81,6 +82,11 @@ export const TableContainer = styled.section`
 
       &.outcome {
         color: #e83f5b;
+      }
+
+      & button {
+        background-color: white;
+        border: none;
       }
     }
 
